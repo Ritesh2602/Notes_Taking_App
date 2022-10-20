@@ -34,17 +34,6 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
           </ul>
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success" type="submit">
-              Search
-            </button>
-          </form>
         </div>
       </div>
     </nav>
@@ -55,27 +44,15 @@
         <div class="card-body">
           <h5 class="card-title">Add a note</h5>
           <div class="mb-3">
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-            ></textarea>
+            <textarea class="form-control" id="addTxt" rows="3"></textarea>
           </div>
-          <button class="btn btn-primary">Add a note</button>
+          <button id="add-btn" class="btn btn-primary">Add a note</button>
         </div>
       </div>
       <hr />
       <h1>Notes</h1>
       <hr />
-      <div id="notes" class="row container-fluid">
-        <div class="card mx-2 my-2" style="width: 18rem">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text"></p>
-            <button class="btn btn-primary">Delete note</button>
-          </div>
-        </div>
-      </div>
+      <div id="notes" class="row container-fluid"></div>
     </div>
 
     <!-- JavaScript Bundle with Popper -->
